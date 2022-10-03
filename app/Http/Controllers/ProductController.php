@@ -326,3 +326,5 @@ class ProductController extends Controller
 // $response = Http::asForm()->post($url, $some_data);
 // $billCode = request()->billcode;
 // return redirect('https://dev.toyyibpay.com/' . $billCode);
+
+//testing
