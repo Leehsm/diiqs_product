@@ -327,4 +327,3 @@ class ProductController extends Controller
 // $billCode = request()->billcode;
 // return redirect('https://dev.toyyibpay.com/' . $billCode);
 
-//testing
