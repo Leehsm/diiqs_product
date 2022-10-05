@@ -11,13 +11,13 @@
       
         <!-- Wrapper for slides -->
         <div class="carousel-inner" id="ourproduct">
-            @foreach ($product as $products )
-                <div class="item {{ $products['id']==1?'active':'' }}">
-                    <a href="detail/{{ $products['id'] }}">
-                        <img class="slider-img" src={{ $products['gallery'] }}>
+            @foreach ($slider as $sliders )
+                <div class="item {{ $sliders->id==1?'active':'' }}">
+                    <a href="detail/{{ $sliders->link }}">
+                        <img class="slider-img" src={{ $sliders->image }}>
                         <div class="carousel-caption slider-text" >
-                            <h3>{{ $products['name'] }}</h3>
-                            <p>{{ $products['description'] }}</p>
+                            <h3>{{ $sliders->name }}</h3>
+                            <p>{{ $sliders->descripttion }}</p>
                         </div>
                     </a>
                 </div>
@@ -53,9 +53,7 @@
             </div>
         @endforeach
     </div>
-</div>
 
-<div class="custom-product">
     <div class="product-wrapper" id="about">
         <h3> Combo </h3>
         @foreach ($product as $products )
@@ -72,9 +70,7 @@
             </div>
         @endforeach
     </div>
-</div>
 
-<div class="custom-product">
     <div class="product-wrapper" id="aboutProduct">
         <h3> About Us </h3>
         @foreach ($product as $products )
@@ -91,48 +87,38 @@
             </div>
         @endforeach
     </div>
-</div>
-<div class="custom-product">
-    <div class="product-wrapper" id="feedback">
+
+    <div class="product-wrapper " id="feedback">
         <h3> About Products </h3>
-        <div class="our-product-detail">
-            <div class="product-detail"><ul class="price">
-                <li><img class="product-detail-img" src=""></li>
-                <li>$ 9.99 / year</li>
-                <li>10GB Storage</li>
-                <li>10 Emails</li>
-                <li>10 Domains</li>
-                <li>1GB Bandwidth</li>
-                <li class="grey"><a href="#" class="button">Sign Up</a></li>
-                </ul></div>
-            <div class="product-detail">
-                <li><img class="product-detail-img" src=""></li>
-                <li>$ 9.99 / year</li>
-                <li>10GB Storage</li>
-                <li>10 Emails</li>
-                <li>10 Domains</li>
-                <li>1GB Bandwidth</li>
-                <li class="grey"><a href="#" class="button">Sign Up</a></li></div>
-            <div class="product-detail">
-                <li><img class="product-detail-img" src=""></li>
-                <li>$ 9.99 / year</li>
-                <li>10GB Storage</li>
-                <li>10 Emails</li>
-                <li>10 Domains</li>
-                <li>1GB Bandwidth</li>
-                <li class="grey"><a href="#" class="button">Sign Up</a></li>
+        @foreach ($product_detail as $prod_details )       
+        <div class="special">    
+            <div class="our-product detail">
+                <img class="our-product-img" src={{ $prod_details->image }}>
+                <div class="product-name">
+                    <h4>{{ $prod_details->name }}</h4>
+                </div>
+                <div class="product-price">
+                    <h5>RM {{ $prod_details->description }}</h5>
+                </div>
+                <div class="product-price">
+                    <h5>RM {{ $prod_details->ingredients }}</h5>
+                </div>
+                <div class="product-price">
+                    <h5>RM {{ $prod_details->volume }}</h5>
+                </div>
+                <div class="product-price">
+                    <h5>RM {{ $prod_details->price }}</h5>
+                </div>
             </div>
         </div>
+        @endforeach  
     </div>
-</div>
-
-<div class="custom-product">
-    <div class="product-wrapper combo" >
+    
+    <div class="product-wrapper" >
         <h3> Give Us Some Review :) </h3>
-        <br>
-        <div class="our-product feedback">
+        <div class="our-product">
             <p> Tell Us your feedback about our product or something we can improve. </p>
-            <form action="/feedback" method="GET">
+            <form action="/feedback" method="GET" class="feedback">
                 <div class="form-group">
                     <label for="feedback_name">Name:</label>
                     <input type="text" class="form-control" name="feedback_name" id="feedback_name">
@@ -150,4 +136,16 @@
         </div>
     </div>
 </div>
+
+{{-- <div class="custom-product"> 
+    
+</div>
+
+<div class="custom-product">
+    
+</div>
+
+<div class="custom-product review">
+    
+</div> --}}
 @endsection

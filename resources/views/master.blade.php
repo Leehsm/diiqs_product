@@ -17,7 +17,7 @@
     @include('frontend.layout.header')
 
     @yield('content')
-
+<br>
     @include('frontend.layout.footer')
 </body>
 
@@ -34,16 +34,19 @@
         z-index: 10;
     }
     img.slider-img{
-        height: 400px !important;
+        height: 250px !important;
     }
     .custom-product{
         /* background-color: #35443585; */
-        height: 300px;
+        /* height: 300px;    */
         /* padding-bottom: 3%; */
+        text-align: center;
     }
     
     .custom-product-slider{
-        height: 400px;
+        /* height: 250px; */
+        /* width: 1311px; */
+        /* background-color:aqua; */
     }
     .slider-text{
         background-color: #35443585 !important;
@@ -52,16 +55,36 @@
         height: 200px;
     }
     .our-product{
-        float: left;
-        margin-left: 3%;
-        width: 30%;
+        /* background-color: red; */
+        display: inline-block;
+        height: 260px;
+        text-align: center;
         padding: 8px;
+    }
+    .special{
+        /* background-color: blue; */
+        margin-left: auto;
+        margin-right: auto;
+        /* display: inline;
+        align-items: center;
+        justify-content: center; */
+        
+    }
+    .detail{ 
+        /* width: 26.6%; */
+        margin-top: 1%;
+        height: auto;
+        padding: 8px;
+        background-color: #ffff;
+        border-radius: 3px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
     .product-wrapper{
         margin-top: 2%;
         margin-left: 5%;
         margin-right: 5%;
-        height: 20px;
+        /* height: 20px; */
+        /* background-color: green; */
     }
     .product-wrapper h3{
         /* text-align: center; */
@@ -174,17 +197,14 @@
         padding-top: 102px;
     }
     .feedback{
-        width: 50%;
-        margin-bottom: 3%;
-        margin-left: 20%;
+        /* width: 800px; */
+        background-color: #ffff;
+        padding: 3%;
+        border-radius: 3px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
-    .product-detail{
-        float: left;
-        margin-left: 3%;
-        width: 30%;
-        padding: 8px;
-        background-color: #35443585;
-        /* margin-left: 1%; */
+    .review{
+        margin-top: 20%;
     }
 </style>
 
