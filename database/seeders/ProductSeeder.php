@@ -20,7 +20,7 @@ class ProductSeeder extends Seeder
             'category'=>'Skincare',
             'description'=>'abcdefghijklmnopqrstuvwxyz',
             'quantity'=>'100',
-            'gallery'=>'154765718_1787837898045742_1338652978407389049_n.jpg',
+            'gallery'=>'upload/154765718_1787837898045742_1338652978407389049_n.jpg',
         ]);
     }
 }
