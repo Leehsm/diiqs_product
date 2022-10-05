@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\AccountController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -38,4 +39,8 @@ Route::post('user/payment/callback', [ProductController::class, 'callBack'])->na
 
 Route::get('orders', [ProductController::class, 'orderHistory']); 
 
-Route::get('feedback', [ProductController::class, 'feedback']); 
+Route::get('feedback', [ProductController::class, 'feedback']);
+
+Route::get('dashboard', [AccountController::class, 'dashboard']); 
+Route::get('order/history', [AccountController::class, 'myAccount']); 
+Route::get('account/detail', [AccountController::class, 'accDetails']); 
