@@ -9,6 +9,8 @@ use App\Models\Product;
 use App\Models\Cart;
 use App\Models\Order;
 use App\Models\OrderItem;
+use App\Models\ProductDetail;
+use App\Models\Slider;
 use Session;
 use Carbon\Carbon;
 
@@ -17,9 +19,11 @@ class ProductController extends Controller
     function index(){
 
         $product = Product::all();
-        // $slider = Slider::all();
+        $slider = Slider::all();
+        $detail_product = DB::table('product_detail')->get();
+        
 
-        return view('frontend.menu.main',['product'=>$product]);
+        return view('frontend.menu.main',['product'=>$product, 'product_detail'=>$detail_product, 'slider'=>$slider]);
     }
 
     function detail($id){
