@@ -88,7 +88,7 @@
         @endforeach
     </div>
 
-    <div class="product-wrapper " id="feedback">
+    <div class="product-wrapper" >
         <h3> About Products </h3>
         @foreach ($product_detail as $prod_details )       
         <div class="special">    
@@ -114,7 +114,7 @@
         @endforeach  
     </div>
     
-    <div class="product-wrapper" >
+    <div class="product-wrapper" id="feedback">
         <h3> Give Us Some Review :) </h3>
         <div class="our-product">
             <p> Tell Us your feedback about our product or something we can improve. </p>
