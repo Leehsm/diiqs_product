@@ -32,6 +32,7 @@
     }
     .navbar-default{
         z-index: 10;
+        width: 100%;
     }
     img.slider-img{
         height: 250px !important;
@@ -143,9 +144,10 @@
         margin-left: 50%;
     }
     .order-history{
-        width: 80%;
+        /* width: 50%; */
         margin-top: 3%;
-        float: right;
+        margin-left: auto;
+        margin-right: auto;
     }
     .title{
         text-align: center;
@@ -154,9 +156,11 @@
         padding-left: 2%;
     }
     .my-account{
-        float: left;
-        margin-top: 3%;
-        width: 15%;
+        /* float: left; */
+        /* margin-top: 3%; */
+        margin-left: auto;
+        margin-right: auto;
+        /* width: 50%; */
     }
     .my-account-a{
         color: rgb(172, 157, 157);
@@ -205,6 +209,20 @@
     }
     .review{
         margin-top: 20%;
+    }
+    .dashboard-button{
+        /* background-color: darkblue; */
+    }
+    .layer{
+        text-align: center;
+        /* background-color: saddlebrown; */
+        margin-left: auto;
+        /* margin-right: auto; */
+    }
+    .btn-lg{
+        margin-top: 2%;
+        margin-left: auto;
+        margin-right: auto;
     }
 </style>
 
