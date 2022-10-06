@@ -58,7 +58,7 @@
     .our-product{
         /* background-color: red; */
         display: inline-block;
-        height: 260px;
+        /* height: 260px; */
         text-align: center;
         padding: 8px;
     }
@@ -93,7 +93,9 @@
         border-bottom: 1px solid rgb(201, 201, 201);
     }
     .detail-img{
-        height: 200px;
+        /* height: 200px; */
+        width: 80%;
+        float: right;
     }
     .cart-product{
         height: 50px;
@@ -188,6 +190,7 @@
     }
     .footer{
         margin-top: 5%;
+        background-color: #e5e4e4ae;
     }
     .combo{
         margin-top: 5%;
@@ -223,6 +226,31 @@
         margin-top: 2%;
         margin-left: auto;
         margin-right: auto;
+    }
+    .about-us{
+        /* background-color: khaki; */
+        width: 50%;
+        float: left;
+    }
+    .about-us-desc{
+        /* background-color: firebrick; */
+        float: right;
+        width: 50%;
+    }
+    .about-us-img{
+        width: 80%;
+    }
+    .about-us-desc{
+        margin-top: 13%;
+    }
+    .footer-icon{
+        width: 8%;
+        margin-bottom: 1%;
+    }
+    .fot a{
+        margin-right: 2%;
+        color: rgb(110, 108, 108);
+        /* font-weight: bold; */
     }
 </style>
 
