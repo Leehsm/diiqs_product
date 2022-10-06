@@ -2,11 +2,12 @@
 @section('content')
 <div class="container">
     <div class="row">
+        <a href="/">< Go Back</a>
         <div class="col-sm-6">
             <img class="detail-img" src="{{asset($product['gallery'])}}" alt="">
         </div>
         <div class="col-sm-6">
-            <a href="/">Go Back</a>
+            <h2></h2>
             <h2>{{$product['name']}}</h2>
             <h3>Price :RM {{$product['price']}}</h3>
             <h4>Details: {{$product['description']}}</h4>
@@ -18,19 +19,14 @@
                 
         </div>
     </div>
+    
+    <br><br>
 
-    {{-- <div class="product-wrapper">
-        <h3>Related Product</h3>
-        @foreach ($related as $products )
-            <div class="our-product">
-                <a href="../detail/{{ $products['id'] }}">
-                    <img class="our-product-img" src={{ asset($products['gallery']) }}>
-                    <div class="">
-                        <h3>{{ $products['name'] }}</h3>
-                    </div>
-                </a>
-            </div>
-        @endforeach
-    </div> --}}
+    <div class="product-wrapper">
+        <h3>Feedback & Review</h3>
+        <div class="our-product">
+            Review
+        </div>
+    </div>
 </div>
 @endsection
