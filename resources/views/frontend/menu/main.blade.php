@@ -73,19 +73,14 @@
 
     <div class="product-wrapper" id="aboutProduct">
         <h3> About Us </h3>
-        @foreach ($product as $products )
-            <div class="our-product">
-                <img class="our-product-img" src={{ $products['gallery'] }}>
-                <a href="detail/{{ $products['id'] }}">
-                    <div class="product-name">
-                        <h4>{{ $products['name'] }}</h4>
-                    </div>
-                </a>
-                <div class="product-price">
-                    <h5>RM {{ $products['price'] }}</h5>
-                </div>
+        <div class="our-product">
+            <div class="about-us">
+                <img class="about-us-img" src="{{ url('/upload/dd.png')}}">
             </div>
-        @endforeach
+            <div class="about-us-desc">
+                <a>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</a>
+            </div>
+        </div>
     </div>
 
     <div class="product-wrapper" >
