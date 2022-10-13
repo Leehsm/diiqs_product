@@ -123,6 +123,7 @@
     }
     .prodQty{
         width: 10%;
+        text-align: center;
     }
     .checkout-form{
         width: 50%;
@@ -251,6 +252,10 @@
         margin-right: 2%;
         color: rgb(110, 108, 108);
         /* font-weight: bold; */
+    }
+    .about-detail-img{
+        width: 80%;
+        /* margin-top: 25%; */
     }
 </style>
 
