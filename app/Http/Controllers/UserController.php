@@ -12,12 +12,18 @@ class UserController extends Controller
 
         $user = User::where(['email'=>$req->email])->first();
         if(!$user || !Hash::check($req->password,$user->password)){
-            return "username or password not match";
+
+            session()->flash('message', 'Invalid credentials');
+            return redirect()->back();
         }
         else{
             $req->session()->put('user',$user);
             return redirect('/');
         }
 
+    }
+
+    function register(Request $req){
+        return view('frontend.register');
     }
 }
